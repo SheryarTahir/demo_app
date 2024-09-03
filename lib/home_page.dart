@@ -21,7 +21,7 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: Colors.deepPurple.shade100,
       appBar: AppBar(
         backgroundColor: Colors.deepPurple,
-        title: Text(
+        title: const Text(
           'COUNTER APP',
           style: TextStyle(color: Colors.white),
         ),
@@ -30,7 +30,7 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('You have pushed the button this many times!'),
+            const Text('You have pushed the button this many times!'),
             Text('$_counter',
                 style: Theme.of(context).textTheme.headlineMedium),
           ],
@@ -38,8 +38,8 @@ class _HomePageState extends State<HomePage> {
       ),
       floatingActionButton: FloatingActionButton(
           backgroundColor: Colors.deepPurple.shade200,
-          child: Icon(Icons.add),
-          onPressed: incrementCounter),
+          onPressed: incrementCounter,
+          child: const Icon(Icons.add)),
     );
   }
 }
